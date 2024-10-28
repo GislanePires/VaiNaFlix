@@ -1,0 +1,19 @@
+header{
+    background-color: rgb(155, 14, 168);
+    height: 12vh;
+    width: 100%;
+    color: white;
+    // box-shadow: 10px;
+
+    ul{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+
+        li{
+            list-style: none;
+            cursor: pointer;
+        }
+    }
+}

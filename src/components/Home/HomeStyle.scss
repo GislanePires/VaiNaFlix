@@ -1,0 +1,136 @@
+main {
+background-image: url(https://images.alphacoders.com/115/1158110.jpg) ;
+background-size: cover;
+height: 90vh;
+// transform: rotate(180deg);
+
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    
+    input {
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: 200px;
+      font-size: 1rem;
+      &:focus {
+        border-color: #333;
+        outline: none;
+      }
+    }
+    
+    button {
+      padding: 0.5rem 1rem;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+  .movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .movie-card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.05);
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    p {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #333;
+      margin: 0.5rem 0;
+    }
+    
+    .details-btn {
+      background-color: #28a745;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 0.3rem 0.6rem;
+      cursor: pointer;
+      &:hover {
+        background-color: #218838;
+      }
+    }
+  }
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-body {
+  background-color: #fff;
+  padding: 20px;
+  width: 80%;
+  max-width: 500px;
+  // max-height: 900px;
+  height: 90%;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.modal-content {
+  .modal-img img {
+    max-width: 100%;
+    height: 16rem;
+    border-radius: 5px;
+  }
+  
+  .modal-info {
+    margin-top: 10px;
+    
+    p {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+.modal-closebtn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+
+    

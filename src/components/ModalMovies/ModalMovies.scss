@@ -1,0 +1,45 @@
+// .modal-display-block {
+//     display: flex;
+//     // position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background-color: rgba(0, 0, 0, 0.7);
+//     justify-content: center;
+//     align-items: center;
+//     z-index: 1000;
+// }
+
+// .modal-body {
+//     background-color: white;
+//     border-radius: 10px;
+//     padding: 20px;
+//     width: 80%;
+//     max-width: 500px;
+//     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+//     text-align: center;
+// }
+.modal-container {
+    display: flex;
+    // position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Certifique-se de que está acima de outros elementos */
+}
+.modal-body {
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        width: 80%;
+        max-width: 500px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        font-size: 1rem;
+        display: flex;
+    }
